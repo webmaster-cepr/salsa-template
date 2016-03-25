@@ -1,0 +1,47 @@
+#main_nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  -webkit-box-shadow: 0 5px 6px -6px black;
+  -moz-box-shadow: 0 5px 6px -6px black;
+  box-shadow: 0 5px 6px -6px black;
+  z-index: 200;
+  background-image: url('http://cepr.net/templates/cepr_blog/images/bg/bg_MainNav_grad.png'),url('http://cepr.net/templates/cepr_blog/images/bg/c4.png');
+  background-position: right top,top center;
+  background-repeat: no-repeat,repeat-x;
+  height: 70px;
+}
+
+ul.nav {
+  
+  margin-top: 20px;
+  
+  li {
+
+    border: 1px solid transparent;
+    padding: 4px 9px 2px 9px;
+    
+    a {
+      font-family: 'Oswald',"HelveticaNeue-CondensedBold",Arial,sans-serif;
+      font-size: 14px;
+      color: #EEEEEE;
+      min-height: 34px;
+      padding: 0;
+    }
+    
+    a:hover { background: none; }
+    a:focus { background-color: transparent !important; }
+
+    ul.dropdown-menu {
+      border: 1px solid #777777;
+      background: -webkit-gradient(linear,0% 0%,0% 100%,from(#EEEEEE),to(#BBBBBB));
+      
+      li {
+        text-align: left;
+        a { color: #015b86; }
+        a:hover, a:focus { color: #029feb; }
+      }
+    }
+    
+  }
+}
