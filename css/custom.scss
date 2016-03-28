@@ -10,6 +10,8 @@
   background-position: right top,top center;
   background-repeat: no-repeat,repeat-x;
   height: 70px;
+  
+  img { margin-left: 25px; }
 }
 
 ul.nav {
@@ -44,4 +46,40 @@ ul.nav {
     }
     
   }
+}
+
+#banner {
+  margin-top: 70px;
+  height: 200px;
+  background-position: center center;
+  background-image: url("http://cepr.net/templates/cepr_blog/images/banners/cepr_blog_headerbw.jpg")
+}
+
+.col-header {
+  font-family: 'Oswald',"HelveticaNeue-CondensedBold",Arial,sans-serif;
+  color: #5091b0;
+  font-size: 18px;
+  border-bottom: 1px solid #d1d1d1;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+#left_col {
+  h3 {
+  @extend .col-header;
+  }
+  
+  img {
+    width: 100%;
+  }
+}
+
+#right_col {
+    margin-top: 24px;
+    border: 1px #d1d1d1 solid;
+    background-color: #ebebeb;
+    padding: 15px;
+    h3 {
+      @extend .col-header;
+    }
 }
