@@ -56,9 +56,13 @@ ul.nav {
   width: 100%; }
 
 #right_col {
-  margin-top: 24px;
+  margin: 24px 6px 0 0;
   border: 1px #d1d1d1 solid;
   background-color: #ebebeb;
-  padding: 15px; }
+  padding: 8px; }
+  #right_col #languages {
+    padding: 12px; }
+    #right_col #languages p {
+      font-family: 'Oswald',"HelveticaNeue-CondensedBold",Arial,sans-serif; }
 
 /*# sourceMappingURL=custom.css.map */

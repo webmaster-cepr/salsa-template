@@ -75,11 +75,17 @@ ul.nav {
 }
 
 #right_col {
-    margin-top: 24px;
+    margin: 24px 6px 0 0;
     border: 1px #d1d1d1 solid;
     background-color: #ebebeb;
-    padding: 15px;
+    padding: 8px;
     h3 {
       @extend .col-header;
+    }
+    #languages {
+      padding: 12px;
+      p {
+        font-family: 'Oswald',"HelveticaNeue-CondensedBold",Arial,sans-serif;
+      }
     }
 }
