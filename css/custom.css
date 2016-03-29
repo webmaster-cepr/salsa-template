@@ -103,22 +103,34 @@ ul.social-media {
     background-position: 0px 0px;
     background-image: url(../social-media-icons.jpg); }
     ul.social-media #twitter:hover {
-      background-position: 0px 0px;
+      background-position: -1px -1px;
       background-image: url(../social-media-icons-hov.jpg); }
   ul.social-media #facebook {
     background-position: -39.5px 0px;
     background-image: url(../social-media-icons.jpg); }
+    ul.social-media #facebook:hover {
+      background-position: -40px -1px;
+      background-image: url(../social-media-icons-hov.jpg); }
   ul.social-media #tumblr {
     background-position: -79px 0px;
     background-image: url(../social-media-icons.jpg); }
+    ul.social-media #tumblr:hover {
+      background-position: -80px -1px;
+      background-image: url(../social-media-icons-hov.jpg); }
   ul.social-media #linkedin {
     background-position: -118.5px 0px;
     background-image: url(../social-media-icons.jpg); }
+    ul.social-media #linkedin:hover {
+      background-position: -120px -1px;
+      background-image: url(../social-media-icons-hov.jpg); }
   ul.social-media #youtube {
     background-position: -158px 0px;
     background-image: url(../social-media-icons.jpg); }
   ul.social-media #google {
     background-position: -197.5px 0px;
     background-image: url(../social-media-icons.jpg); }
+    ul.social-media #google:hover {
+      background-position: -198px -1px;
+      background-image: url(../social-media-icons-hov.jpg); }
 
 /*# sourceMappingURL=custom.css.map */

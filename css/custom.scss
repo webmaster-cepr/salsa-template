@@ -143,12 +143,22 @@ ul.social-media {
     cursor: pointer;
   }
   #twitter { @include social($social-pos $social-pos,social-media-icons);
-    &:hover { @include social($social-pos $social-pos,social-media-icons-hov); }
+    &:hover { @include social(($social-pos - 1) ($social-pos - 1),social-media-icons-hov); }
   }
-  #facebook { @include social(($social-pos - 39.5) $social-pos,social-media-icons); }
-  #tumblr { @include social(($social-pos - 39.5*2) $social-pos,social-media-icons); }
-  #linkedin { @include social(($social-pos - 39.5*3) $social-pos,social-media-icons); }
-  #youtube { @include social(($social-pos - 39.5*4) $social-pos,social-media-icons); }
-  #google { @include social(($social-pos - 39.5*5) $social-pos,social-media-icons); }
+  #facebook { @include social(($social-pos - 39.5) $social-pos,social-media-icons);
+    &:hover { @include social(($social-pos - 40) ($social-pos - 1),social-media-icons-hov); }
+  }
+  #tumblr { @include social(($social-pos - 39.5*2) $social-pos,social-media-icons);
+    &:hover { @include social(($social-pos - 40*2) ($social-pos - 1),social-media-icons-hov); }
+  }
+  #linkedin { @include social(($social-pos - 39.5*3) $social-pos,social-media-icons);
+    &:hover { @include social(($social-pos - 40*3) ($social-pos - 1),social-media-icons-hov); }
+  }
+  #youtube { @include social(($social-pos - 39.5*4) $social-pos,social-media-icons);
+    // &:hover { @include social(($social-pos - 40*4) ($social-pos - 1),social-media-icons-hov); }
+  }
+  #google { @include social(($social-pos - 39.5*5) $social-pos,social-media-icons);
+    &:hover { @include social(($social-pos - 39.60*5) ($social-pos - 1),social-media-icons-hov); }
+  }
   
 }
