@@ -1,3 +1,5 @@
+$social-pos: 0px;
+
 @mixin social($position,$filename:filename) {
   background: {
     position: $position;
@@ -140,6 +142,13 @@ ul.social-media {
     display: inline-block;
     cursor: pointer;
   }
-  #twitter { @include social(top left,social-media-icons); }
-  #facebook { @include social(-40px 0px,social-media-icons); }
+  #twitter { @include social($social-pos $social-pos,social-media-icons);
+    &:hover { @include social($social-pos $social-pos,social-media-icons-hov); }
+  }
+  #facebook { @include social(($social-pos - 39.5) $social-pos,social-media-icons); }
+  #tumblr { @include social(($social-pos - 39.5*2) $social-pos,social-media-icons); }
+  #linkedin { @include social(($social-pos - 39.5*3) $social-pos,social-media-icons); }
+  #youtube { @include social(($social-pos - 39.5*4) $social-pos,social-media-icons); }
+  #google { @include social(($social-pos - 39.5*5) $social-pos,social-media-icons); }
+  
 }
