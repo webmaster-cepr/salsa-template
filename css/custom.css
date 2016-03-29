@@ -38,6 +38,9 @@ ul.nav {
         ul.nav li ul.dropdown-menu li a:hover, ul.nav li ul.dropdown-menu li a:focus {
           color: #029feb; }
 
+.dropdown:hover .dropdown-menu {
+  display: block; }
+
 #banner {
   margin-top: 70px;
   height: 200px;
@@ -67,7 +70,7 @@ ul.nav {
   font-family: 'Oswald',"HelveticaNeue-CondensedBold",Arial,sans-serif; }
 
 #right_col {
-  margin: 24px 6px 0 0;
+  margin: 20px 6px 0 0;
   border: 1px #d1d1d1 solid;
   background-color: #ebebeb;
   padding: 8px; }
@@ -132,5 +135,31 @@ ul.social-media {
     ul.social-media #google:hover {
       background-position: -198px -1px;
       background-image: url(../social-media-icons-hov.jpg); }
+
+.mobile-menu {
+  display: none; }
+
+/* iPhone 6 and smaller */
+@media screen and (max-width: 400px) {
+  .mobile-menu {
+    display: inline-block;
+    color: #fff;
+    font-size: 1.5em;
+    padding: 24px; }
+
+  #main_nav {
+    position: absolute; }
+    #main_nav img {
+      width: 75%;
+      margin: 12px auto; }
+
+  ul.nav {
+    display: none; }
+
+  #banner {
+    display: none; }
+
+  #left_col img {
+    width: 50%; } }
 
 /*# sourceMappingURL=custom.css.map */

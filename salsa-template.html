@@ -18,11 +18,11 @@
     <!-- HEADER -->
     <div class="row" id="main_nav">
       <!-- LOGO -->
-      <div class="col-sm-4">
-        <img src="http://www.cepr.net/templates/cepr_blog/images/logos/cepr_header.png" alt="Return to Home Page" border="0" title="Return to the Home Page" width="300"/>
+      <div class="col-md-3 col-sm-12">
+        <img src="http://www.cepr.net/templates/cepr_blog/images/logos/cepr_header.png" alt="Return to Home Page" border="0" title="Return to the Home Page" width="300"/><span class="mobile-menu glyphicon glyphicon-menu-hamburger pull-right"></span>
       </div>
       <!-- NAV -->
-      <div class="col-sm-8">
+      <div class="col-md-9">
         
         <nav class="navbar">
           <ul class="nav navbar-nav navbar-right">
@@ -32,9 +32,9 @@
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us</a>
               <ul class="dropdown-menu">
-                <li><a href="#">Staff</a></li>
-                <li><a href="#">Senior Research Associates</a></li>
-                <li><a href="#">Board of Directors</a></li>
+                <li><a href="http://cepr.net/about-us/staff/">Economists/Staff</a></li>
+                <li><a href="http://cepr.net/staff/research-associates/">Senior Research Associates</a></li>
+                <li><a href="http://cepr.net/about-us/board">Board of Directors</a></li>
                 <li><a href="#">Our Funders</a></li>
                 <li><a href="#">Jobs/Internships</a></li>
                 <li><a href="#">CEPR: Through the Years</a></li>
@@ -109,19 +109,26 @@
     
     <!-- MAIN CONTENT AREA -->
     <div class="row">
+
+      <!-- SALSA CONTENT AREA -->
+      <div class="col-sm-7 col-sm-push-2">
+        <hr/>
+        
+      </div><!-- END SALSA CONTENT AREA -->
       
       <!-- LEFT COLUMN -->
-      <div class="col-sm-2" id="left_col">
+      <div class="col-sm-2 col-sm-pull-7" id="left_col">
         <h3>About Us</h3>
-        <p>Staff</p>
-        <p>Senior Research Associates</p>
-        <p>Board of Directors</p>
+        <p><a href="http://cepr.net/about-us/staff/">Economists/Staff</a></p>
+        <p><a href="http://cepr.net/staff/research-associates/">Senior Research Associates</a></p>
+        <p><a href="http://cepr.net/about-us/board">Board of Directors</a></p>
         <p>Our Funders</p>
         <p>Jobs/Internships</p>
         <p>CEPR: Through the Years</p>
         <p>Contact Us</p>
         
         <h3>The Blogs</h3>
+        <div class="text-center">
           <a href="http://cepr.net/index.php/blogs/the-americas-blog"><img src="http://cepr.net/templates/cepr_blog/images/banners/america-blog-thumb.jpg" alt="The Americas Blog"></a>
           <br><br>
           <a href="http://cepr.net/index.php/blogs/beat-the-press"><img src="http://cepr.net/templates/cepr_blog/images/logos/beat_the_press_large.gif" alt="Beat the Press"></a>
@@ -133,13 +140,8 @@
           <a href="http://cepr.net/index.php/blogs/haiti-relief-and-reconstruction-watch"><img src="http://cepr.net/images/stories/Haiti-Blog-Logo.gif" alt="Haiti: Relief &amp; Reconstruction Watch"></a>
           <br/><br/>
           <a href="http://cepr.net/index.php/blogs/social-security-monitor"><img src="http://cepr.net/templates/cepr_blog/images/logos/ss-monitor-logo.jpg" alt="Social Security Monitor"></a>
+        </div>
       </div> <!-- END LEFT COLUMN -->
-      
-      <!-- SALSA CONTENT AREA -->
-      <div class="col-sm-7">
-        <hr/>
-        
-      </div><!-- END SALSA CONTENT AREA -->
       
       <!-- RIGHT COLUMN -->
       <div class="col-sm-3">
@@ -147,10 +149,10 @@
         
           <!-- SEARCH FORM -->
           <form class="form-inline" role="form">
-            <div class="form-group">
+            <div class="input-group">
               <input type="text" class="form-control" id="search" placeholder="Search">
+              <span class="input-group-btn"><button type="submit" class="btn btn-default">Go</button></span>
             </div>
-            <button type="submit" class="btn btn-default">Go</button>
           </form><!-- END SEARCH FORM -->
           
           <!-- OTHER LANGUAGES -->
