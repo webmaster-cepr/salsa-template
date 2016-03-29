@@ -1,3 +1,10 @@
+@mixin social($position,$filename:filename) {
+  background: {
+    position: $position;
+    image: url(../#{$filename}.jpg);
+  }
+}
+
 #main_nav {
   position: fixed;
   width: 100%;
@@ -16,7 +23,7 @@
 
 ul.nav {
   
-  margin-top: 20px;
+  margin: 20px 60px 0 0;
   
   li {
 
@@ -55,6 +62,18 @@ ul.nav {
   background-image: url("http://cepr.net/templates/cepr_blog/images/banners/cepr_blog_headerbw.jpg")
 }
 
+#breadcrumbs {
+  padding: 16px;
+  
+  p {
+    font-family: 'Oswald',"HelveticaNeue-CondensedBold",Arial,sans-serif;
+    color: #5091b0;
+    font-size: 18px;
+  }
+  
+  .active { color: #000; }
+}
+
 .col-header {
   font-family: 'Oswald',"HelveticaNeue-CondensedBold",Arial,sans-serif;
   color: #5091b0;
@@ -72,6 +91,10 @@ ul.nav {
   img {
     width: 100%;
   }
+
+  p {
+    font-family: 'Oswald',"HelveticaNeue-CondensedBold",Arial,sans-serif;
+  }
 }
 
 #right_col {
@@ -88,4 +111,35 @@ ul.nav {
         font-family: 'Oswald',"HelveticaNeue-CondensedBold",Arial,sans-serif;
       }
     }
+}
+
+footer {
+  -webkit-box-shadow: 0 5px 6px -6px black;
+  -moz-box-shadow: 0 5px 6px -6px black;
+  box-shadow: 0 5px 6px -6px black;
+  border: 1px #d1d1d1 solid;
+  background-color: #ebebeb;
+  margin-top: 36px;
+  min-height: 250px;
+  padding-top: 50px;
+  color: #858585 !important;
+  font-weight: normal;
+  
+  h3 {
+    font-family: 'Oswald',"HelveticaNeue-CondensedBold",Arial,sans-serif;
+    font-size: 18px;
+    margin-top: 0;
+  }
+}
+
+ul.social-media {
+  padding-left: 0;
+  li, li a {
+    height: 36px;
+    width: 36px;
+    display: inline-block;
+    cursor: pointer;
+  }
+  #twitter { @include social(top left,social-media-icons); }
+  #facebook { @include social(-40px 0px,social-media-icons); }
 }

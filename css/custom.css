@@ -14,7 +14,7 @@
     margin-left: 25px; }
 
 ul.nav {
-  margin-top: 20px; }
+  margin: 20px 60px 0 0; }
   ul.nav li {
     border: 1px solid transparent;
     padding: 4px 9px 2px 9px; }
@@ -44,6 +44,15 @@ ul.nav {
   background-position: center center;
   background-image: url("http://cepr.net/templates/cepr_blog/images/banners/cepr_blog_headerbw.jpg"); }
 
+#breadcrumbs {
+  padding: 16px; }
+  #breadcrumbs p {
+    font-family: 'Oswald',"HelveticaNeue-CondensedBold",Arial,sans-serif;
+    color: #5091b0;
+    font-size: 18px; }
+  #breadcrumbs .active {
+    color: #000; }
+
 .col-header, #left_col h3, #right_col h3 {
   font-family: 'Oswald',"HelveticaNeue-CondensedBold",Arial,sans-serif;
   color: #5091b0;
@@ -54,6 +63,8 @@ ul.nav {
 
 #left_col img {
   width: 100%; }
+#left_col p {
+  font-family: 'Oswald',"HelveticaNeue-CondensedBold",Arial,sans-serif; }
 
 #right_col {
   margin: 24px 6px 0 0;
@@ -64,5 +75,35 @@ ul.nav {
     padding: 12px; }
     #right_col #languages p {
       font-family: 'Oswald',"HelveticaNeue-CondensedBold",Arial,sans-serif; }
+
+footer {
+  -webkit-box-shadow: 0 5px 6px -6px black;
+  -moz-box-shadow: 0 5px 6px -6px black;
+  box-shadow: 0 5px 6px -6px black;
+  border: 1px #d1d1d1 solid;
+  background-color: #ebebeb;
+  margin-top: 36px;
+  min-height: 250px;
+  padding-top: 50px;
+  color: #858585 !important;
+  font-weight: normal; }
+  footer h3 {
+    font-family: 'Oswald',"HelveticaNeue-CondensedBold",Arial,sans-serif;
+    font-size: 18px;
+    margin-top: 0; }
+
+ul.social-media {
+  padding-left: 0; }
+  ul.social-media li, ul.social-media li a {
+    height: 36px;
+    width: 36px;
+    display: inline-block;
+    cursor: pointer; }
+  ul.social-media #twitter {
+    background-position: top left;
+    background-image: url(../social-media-icons.jpg); }
+  ul.social-media #facebook {
+    background-position: -40px 0px;
+    background-image: url(../social-media-icons.jpg); }
 
 /*# sourceMappingURL=custom.css.map */
