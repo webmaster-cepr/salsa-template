@@ -104,40 +104,53 @@ ul.social-media {
     cursor: pointer; }
   ul.social-media #twitter {
     background-position: 0px 0px;
-    background-image: url(../social-media-icons.jpg); }
+    background-image: url(https://org.salsalabs.com/o/967/images/social-media-icons.jpg); }
     ul.social-media #twitter:hover {
       background-position: -1px -1px;
-      background-image: url(../social-media-icons-hov.jpg); }
+      background-image: url(https://org.salsalabs.com/o/967/images/social-media-icons-hov.jpg); }
   ul.social-media #facebook {
     background-position: -39.5px 0px;
-    background-image: url(../social-media-icons.jpg); }
+    background-image: url(https://org.salsalabs.com/o/967/images/social-media-icons.jpg); }
     ul.social-media #facebook:hover {
       background-position: -40px -1px;
-      background-image: url(../social-media-icons-hov.jpg); }
+      background-image: url(https://org.salsalabs.com/o/967/images/social-media-icons-hov.jpg); }
   ul.social-media #tumblr {
     background-position: -79px 0px;
-    background-image: url(../social-media-icons.jpg); }
+    background-image: url(https://org.salsalabs.com/o/967/images/social-media-icons.jpg); }
     ul.social-media #tumblr:hover {
       background-position: -80px -1px;
-      background-image: url(../social-media-icons-hov.jpg); }
+      background-image: url(https://org.salsalabs.com/o/967/images/social-media-icons-hov.jpg); }
   ul.social-media #linkedin {
     background-position: -118.5px 0px;
-    background-image: url(../social-media-icons.jpg); }
+    background-image: url(https://org.salsalabs.com/o/967/images/social-media-icons.jpg); }
     ul.social-media #linkedin:hover {
       background-position: -120px -1px;
-      background-image: url(../social-media-icons-hov.jpg); }
+      background-image: url(https://org.salsalabs.com/o/967/images/social-media-icons-hov.jpg); }
   ul.social-media #youtube {
     background-position: -158px 0px;
-    background-image: url(../social-media-icons.jpg); }
+    background-image: url(https://org.salsalabs.com/o/967/images/social-media-icons.jpg); }
+    ul.social-media #youtube:hover {
+      background-position: -158px -1px;
+      background-image: url(https://org.salsalabs.com/o/967/images/social-media-icons-hov.jpg); }
   ul.social-media #google {
     background-position: -197.5px 0px;
-    background-image: url(../social-media-icons.jpg); }
+    background-image: url(https://org.salsalabs.com/o/967/images/social-media-icons.jpg); }
     ul.social-media #google:hover {
       background-position: -198px -1px;
-      background-image: url(../social-media-icons-hov.jpg); }
+      background-image: url(https://org.salsalabs.com/o/967/images/social-media-icons-hov.jpg); }
 
 .mobile-menu {
   display: none; }
+
+h1, h2, h3 {
+  font-family: 'Oswald',"HelveticaNeue-CondensedBold",Arial,sans-serif; }
+
+p {
+  margin-bottom: 1em;
+  font-size: 12px;
+  color: #5A5050;
+  font-family: Verdana,Arial,Helvetica,sans-serif;
+  line-height: 18px; }
 
 /* iPhone 6 and smaller */
 @media screen and (max-width: 400px) {

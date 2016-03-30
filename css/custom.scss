@@ -3,7 +3,7 @@ $social-pos: 0px;
 @mixin social($position,$filename:filename) {
   background: {
     position: $position;
-    image: url(../#{$filename}.jpg);
+    image: url(https://org.salsalabs.com/o/967/images/#{$filename}.jpg);
   }
 }
 
@@ -159,7 +159,7 @@ ul.social-media {
     &:hover { @include social(($social-pos - 40*3) ($social-pos - 1),social-media-icons-hov); }
   }
   #youtube { @include social(($social-pos - 39.5*4) $social-pos,social-media-icons);
-    // &:hover { @include social(($social-pos - 40*4) ($social-pos - 1),social-media-icons-hov); }
+    &:hover { @include social(($social-pos - 39.5*4) ($social-pos - 1),social-media-icons-hov); }
   }
   #google { @include social(($social-pos - 39.5*5) $social-pos,social-media-icons);
     &:hover { @include social(($social-pos - 39.60*5) ($social-pos - 1),social-media-icons-hov); }
@@ -168,6 +168,18 @@ ul.social-media {
 }
 
 .mobile-menu { display: none; }
+
+h1, h2, h3 {
+  font-family: 'Oswald',"HelveticaNeue-CondensedBold",Arial,sans-serif;
+}
+
+p {
+  margin-bottom: 1em;
+  font-size: 12px;
+  color: #5A5050;
+  font-family: Verdana,Arial,Helvetica,sans-serif;
+  line-height: 18px;
+}
 
 /* iPhone 6 and smaller */
 @media screen and (max-width: 400px) {
@@ -190,10 +202,8 @@ ul.social-media {
     display: none;
   }
   
-  #left_col {
-   img {
-     width: 50%;
-   }
+  #left_col, #right_col {
+    display: none;
   }
   
 }
