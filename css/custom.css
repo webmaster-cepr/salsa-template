@@ -139,6 +139,10 @@ ul.social-media {
       background-position: -198px -1px;
       background-image: url(https://org.salsalabs.com/o/967/images/social-media-icons-hov.jpg); }
 
+#license {
+  background-color: #d7d7d7;
+  padding: 20px; }
+
 .mobile-menu {
   display: none; }
 
@@ -166,13 +170,15 @@ p {
       width: 75%;
       margin: 12px auto; }
 
-  ul.nav {
-    display: none; }
+  nav {
+    display: none;
+    width: 100%;
+    background-color: #053641; }
 
   #banner {
     display: none; }
 
-  #left_col img {
-    width: 50%; } }
+  #left_col, #right_col, #partner-logos {
+    display: none; } }
 
 /*# sourceMappingURL=custom.css.map */

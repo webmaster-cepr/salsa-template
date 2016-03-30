@@ -152,7 +152,7 @@
           <form class="form-inline" role="form">
             <div class="input-group">
               <input type="text" class="form-control" id="search" placeholder="Search">
-              <span class="input-group-btn"><button type="submit" class="btn btn-default">Go</button></span>
+              <span class="input-group-btn"><a id="search-btn" class="btn btn-default">Go</a></span>
             </div>
           </form><!-- END SEARCH FORM -->
           
@@ -180,7 +180,7 @@
     <footer class="row">
       
       <!-- PARTNER LOGOS -->
-      <div class="col-sm-5">
+      <div class="col-sm-5" id="partner-logos">
         <p><a href="http://www2.guidestar.org/organizations/52-2204029/center-economic-policy-research.aspx" target="_blank"><img alt="GuideStar Exchange Gold" src="http://cepr.net/images/stories/logos/GuideStar_gold.png" height="60" width="83"></a>&nbsp;<a href="http://www.charitynavigator.org/index.cfm?bay=search.summary&amp;orgid=10172" target="_blank"><img alt="charity navigator" src="http://cepr.net/images/stories/logos/charity_navigator_logo120x60.gif" height="50" width="100"></a>&nbsp;<a href="http://www.leraweb.org/" target="_blank"><img alt="LERA" src="http://cepr.net/images/stories/logos/LERA-logo.png"></a>&nbsp;<a href="http://www.bestcfc.org/charitypage.php?ein=52-2204029" target="_blank"><img alt="cfc" src="http://cepr.net/images/stories/logos/cfc.png" height="50" width="90"></a>&nbsp;<a href="http://ifptelocal70.org/home/" target="_blank"><img alt="IFPTE" src="http://cepr.net/images/stories/logos/IFPTE.png"></a></p>
       </div>
       
@@ -204,6 +204,15 @@
           <li id="google"><a href="https://plus.google.com/105965366836516988106/posts"></a></li>
         </ul>
       </div>
+
+      <div class="clearfix"></div>
+      
+      <div class="col-sm-12" id="license">
+                <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+                	<img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png">
+                </a>
+                <p>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"> Creative Commons Attribution 4.0 International License</a></p>
+		  </div>
       
     </footer>
 
@@ -213,5 +222,20 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <!-- Bootstrap -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script>
+  
+  function search() {
+    location='http://www.google.com/search?q=' + encodeURIComponent($('#search').val()) + " site:cepr.net";
+  }
+  
+  $(document).ready(function(){
+    $("#search-btn").on('click', function(){
+      search();
+    });
+    $(".mobile-menu").on('click', function(){
+      $(".navbar").slideToggle();
+    });
+  });
+</script>
 </body>
 </html>
