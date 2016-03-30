@@ -157,7 +157,7 @@ p {
   line-height: 18px; }
 
 /* iPhone 6 and smaller */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 435px) {
   .mobile-menu {
     display: inline-block;
     color: #fff;
@@ -167,12 +167,11 @@ p {
   #main_nav {
     position: absolute; }
     #main_nav img {
-      width: 75%;
+      width: 70%;
       margin: 12px auto; }
 
   nav {
     display: none;
-    width: 100%;
     background-color: #053641; }
 
   #banner {
