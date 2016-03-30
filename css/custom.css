@@ -157,6 +157,18 @@ p {
   line-height: 18px; }
 
 /* iPhone 6 and smaller */
+@media screen and (max-width: 768px) {
+  #breadcrumbs {
+    margin-top: 80px; }
+
+  ul.nav {
+    margin-right: 0px; }
+    ul.nav li a {
+      font-size: 11px; }
+
+  #banner {
+    display: none; } }
+/* iPhone 6 and smaller */
 @media screen and (max-width: 435px) {
   .mobile-menu {
     display: inline-block;
@@ -174,8 +186,8 @@ p {
     display: none;
     background-color: #053641; }
 
-  #banner {
-    display: none; }
+  ul.nav li a {
+    font-size: 14px; }
 
   #left_col, #right_col, #partner-logos {
     display: none; } }
