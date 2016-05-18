@@ -140,8 +140,11 @@ ul.social-media {
   display: none; }
 
 /* Overriding Salsa styles */
-.salsa label, .salsa legend {
-  font: 12px Verdana; }
+.salsa p, .salsa label, .salsa legend {
+  font: 12px Verdana !important; }
+
+.helpText, #de_compliance ul li {
+  font: 12px Verdana !important; }
 
 h3 {
   font-family: 'Oswald',"HelveticaNeue-CondensedBold",Arial,sans-serif; }

@@ -171,9 +171,16 @@ ul.social-media {
 
 /* Overriding Salsa styles */
 
-.salsa label, .salsa legend {
-  font: 12px Verdana;
+.salsa {
+  p, label, legend {
+    font: 12px Verdana !important;
+  }
 }
+
+.helpText, #de_compliance ul li {
+    font: 12px Verdana !important;
+}
+
 
 h3 {
   font-family: 'Oswald',"HelveticaNeue-CondensedBold",Arial,sans-serif;
